@@ -2,14 +2,14 @@
   "name": "jeprint",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "dependencies": {
     "webpack-cli": "^3.3.12",
     "webpack": "^4.43.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "webpack-cli"
+    "development": "webpack --mode=development",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

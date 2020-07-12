@@ -1,9 +1,8 @@
-var jeprint = function(){
-    var html = document.getElementsByTagName('html')[0]
+var jeprint = function () {
 
     let style = `@media print {
         body {
-            visibility: hidden;
+            display: none;
         }
         #printable {
             display: block !important;
@@ -21,24 +20,22 @@ var jeprint = function(){
 
     document.getElementsByTagName('head')[0].appendChild(styleNode);
 
-    function letPrint(content){
+    function printHtml(content) {
         let printable = document.createElement('div')
         printable.innerHTML = content
         printable.id = "printable"
-        html.appendChild(printable)
+        document.getElementsByTagName('html')[0].appendChild(printable)
 
         print();
-       
+
     }
 
-    window.onafterprint = function(){
+    window.onafterprint = function () {
         let printable = document.getElementById('printable')
         printable.remove();
     }
 
     return {
-        printText: letPrint
+        printHtml: printHtml
     }
 }()
-
-jeprint.printText('<p><strong>La Raja</strong>, lo logre!!!!</p>');
