@@ -1,7 +1,6 @@
 {
-  "name": "jeprint",
+  "name": "@rocksvern/jeprint",
   "version": "1.0.0",
-  "description": "",
   "dependencies": {
     "webpack-cli": "^3.3.12",
     "webpack": "^4.43.0"
@@ -11,7 +10,17 @@
     "development": "webpack --mode=development",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocksvern/jeprint.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "rocksvern <leganrocksvern@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocksvern/jeprint/issues"
+  },
+  "homepage": "https://github.com/rocksvern/jeprint#readme",
+  "main": "src/main.js",
+  "description": ""
 }
