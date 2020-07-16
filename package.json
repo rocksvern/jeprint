@@ -21,6 +21,6 @@
     "url": "https://github.com/rocksvern/jeprint/issues"
   },
   "homepage": "https://github.com/rocksvern/jeprint#readme",
-  "main": "src/main.js",
+  "main": "src/index.js",
   "description": ""
 }

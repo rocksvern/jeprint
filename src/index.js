@@ -1,4 +1,4 @@
-var jeprint = function () {
+const jeprint = function() {
 
     let style = `@media print {
         body {
@@ -39,3 +39,5 @@ var jeprint = function () {
         printHtml: printHtml
     }
 }()
+
+export default jeprint
